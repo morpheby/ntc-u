@@ -1,0 +1,29 @@
+
+[ req ]
+default_bits = 4096
+distinguished_name = req_distinguished_name
+attributes = req_attributes
+prompt = no
+output_password = @cert_password@
+req_extensions = v3_req
+
+[ req_distinguished_name ]
+C = BY
+ST = Mogilev
+L = Didaktika
+O = NTC Didaktika, PPC
+OU = @cert_unit@
+CN = @cert_name@
+emailAddress = @email@
+
+[ req_attributes ]
+
+
+[ v3_ca ]
+basicConstraints = CA:TRUE
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always,issuer:always
+
+[ v3_req ]
+basicConstraints = CA:FALSE
+subjectKeyIdentifier = hash
