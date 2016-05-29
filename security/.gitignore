@@ -1,0 +1,11 @@
+
+ntcu-control-server-tmp/
+ntcu-control-server/
+ntcu-gateway-server-tmp/
+ntcu-gateway-server/
+ntcu-root-ca-tmp/
+ntcu-root-ca/
+ntcu-server-trust-tmp/
+ntcu-server-trust/
+passwords/
+
